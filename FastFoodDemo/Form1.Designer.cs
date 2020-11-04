@@ -37,8 +37,8 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.addPrdouct = new System.Windows.Forms.Button();
+            this.btnDashboard = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
@@ -51,8 +51,8 @@
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
-            this.firstCustomControl1 = new FastFoodDemo.FirstCustomControl();
             this.mySecondCustmControl1 = new FastFoodDemo.MySecondCustmControl();
+            this.firstCustomControl1 = new FastFoodDemo.FirstCustomControl();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -68,12 +68,12 @@
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button14);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.addPrdouct);
+            this.panel1.Controls.Add(this.btnDashboard);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(209, 583);
+            this.panel1.Size = new System.Drawing.Size(209, 578);
             this.panel1.TabIndex = 0;
             // 
             // SidePanel
@@ -179,39 +179,39 @@
             this.button14.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button14.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // addPrdouct
             // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(12, 113);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(197, 54);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "       Eat-In";
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.addPrdouct.FlatAppearance.BorderSize = 0;
+            this.addPrdouct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addPrdouct.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addPrdouct.ForeColor = System.Drawing.Color.White;
+            this.addPrdouct.Image = ((System.Drawing.Image)(resources.GetObject("addPrdouct.Image")));
+            this.addPrdouct.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.addPrdouct.Location = new System.Drawing.Point(12, 113);
+            this.addPrdouct.Name = "addPrdouct";
+            this.addPrdouct.Size = new System.Drawing.Size(197, 54);
+            this.addPrdouct.TabIndex = 4;
+            this.addPrdouct.Text = "       Add-Product";
+            this.addPrdouct.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.addPrdouct.UseVisualStyleBackColor = true;
+            this.addPrdouct.Click += new System.EventHandler(this.addProduct_Click);
             // 
-            // button1
+            // btnDashboard
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(12, 59);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(197, 54);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "       Home";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnDashboard.FlatAppearance.BorderSize = 0;
+            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDashboard.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.ForeColor = System.Drawing.Color.White;
+            this.btnDashboard.Image = ((System.Drawing.Image)(resources.GetObject("btnDashboard.Image")));
+            this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDashboard.Location = new System.Drawing.Point(12, 59);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Size = new System.Drawing.Size(197, 54);
+            this.btnDashboard.TabIndex = 4;
+            this.btnDashboard.Text = "       Dashboard";
+            this.btnDashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDashboard.UseVisualStyleBackColor = true;
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // panel2
             // 
@@ -230,7 +230,7 @@
             this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Location = new System.Drawing.Point(243, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(111, 143);
+            this.panel3.Size = new System.Drawing.Size(111, 135);
             this.panel3.TabIndex = 2;
             // 
             // label3
@@ -258,7 +258,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::FastFoodDemo.Properties.Resources.images;
-            this.pictureBox1.Location = new System.Drawing.Point(17, 16);
+            this.pictureBox1.Location = new System.Drawing.Point(21, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(67, 63);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -268,12 +268,12 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(360, 19);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(291, 21);
+            this.label4.Size = new System.Drawing.Size(249, 25);
             this.label4.TabIndex = 3;
-            this.label4.Text = "C# UI Designing By SaLaaR HuSceyN";
+            this.label4.Text = "Inshallah Medical Store";
             // 
             // button8
             // 
@@ -365,6 +365,13 @@
             this.button13.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button13.UseVisualStyleBackColor = true;
             // 
+            // mySecondCustmControl1
+            // 
+            this.mySecondCustmControl1.Location = new System.Drawing.Point(208, 141);
+            this.mySecondCustmControl1.Name = "mySecondCustmControl1";
+            this.mySecondCustmControl1.Size = new System.Drawing.Size(818, 434);
+            this.mySecondCustmControl1.TabIndex = 6;
+            // 
             // firstCustomControl1
             // 
             this.firstCustomControl1.Location = new System.Drawing.Point(209, 156);
@@ -372,18 +379,11 @@
             this.firstCustomControl1.Size = new System.Drawing.Size(805, 423);
             this.firstCustomControl1.TabIndex = 5;
             // 
-            // mySecondCustmControl1
-            // 
-            this.mySecondCustmControl1.Location = new System.Drawing.Point(208, 156);
-            this.mySecondCustmControl1.Name = "mySecondCustmControl1";
-            this.mySecondCustmControl1.Size = new System.Drawing.Size(818, 406);
-            this.mySecondCustmControl1.TabIndex = 6;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1026, 583);
+            this.ClientSize = new System.Drawing.Size(1026, 578);
             this.Controls.Add(this.mySecondCustmControl1);
             this.Controls.Add(this.firstCustomControl1);
             this.Controls.Add(this.label4);
@@ -412,8 +412,8 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button addPrdouct;
+        private System.Windows.Forms.Button btnDashboard;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label3;

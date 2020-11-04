@@ -15,22 +15,22 @@ namespace FastFoodDemo
         public Form1()
         {
             InitializeComponent();
-            SidePanel.Height = button1.Height;
-            SidePanel.Top = button1.Top;
+            SidePanel.Height = btnDashboard.Height;
+            SidePanel.Top = btnDashboard.Top;
             firstCustomControl1.BringToFront();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnDashboard_Click(object sender, EventArgs e)
         {
-            SidePanel.Height = button1.Height;
-            SidePanel.Top = button1.Top;
+            SidePanel.Height = btnDashboard.Height;
+            SidePanel.Top = btnDashboard.Top;
             firstCustomControl1.BringToFront();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void addProduct_Click(object sender, EventArgs e)
         {
-            SidePanel.Height = button2.Height;
-            SidePanel.Top = button2.Top;
+            SidePanel.Height = addPrdouct.Height;
+            SidePanel.Top = addPrdouct.Top;
             mySecondCustmControl1.BringToFront();
 
             //Thanks for watching Friends...
