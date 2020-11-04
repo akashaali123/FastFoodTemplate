@@ -50,9 +50,9 @@
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.addProductCustmControl1 = new FastFoodDemo.AddProductCustmControl();
-            this.firstCustomControl1 = new FastFoodDemo.FirstCustomControl();
+            this.btnCloseApplication = new System.Windows.Forms.Button();
+            this.addProductCustmControl = new FastFoodDemo.AddProductCustmControl();
+            this.dashboardCustomControl = new FastFoodDemo.DashboardCustomControl();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -350,44 +350,45 @@
             this.button12.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button12.UseVisualStyleBackColor = true;
             // 
-            // button13
+            // btnCloseApplication
             // 
-            this.button13.FlatAppearance.BorderSize = 0;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.ForeColor = System.Drawing.Color.White;
-            this.button13.Image = ((System.Drawing.Image)(resources.GetObject("button13.Image")));
-            this.button13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button13.Location = new System.Drawing.Point(977, 19);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(32, 35);
-            this.button13.TabIndex = 4;
-            this.button13.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button13.UseVisualStyleBackColor = true;
+            this.btnCloseApplication.FlatAppearance.BorderSize = 0;
+            this.btnCloseApplication.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCloseApplication.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCloseApplication.ForeColor = System.Drawing.Color.White;
+            this.btnCloseApplication.Image = ((System.Drawing.Image)(resources.GetObject("btnCloseApplication.Image")));
+            this.btnCloseApplication.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCloseApplication.Location = new System.Drawing.Point(977, 19);
+            this.btnCloseApplication.Name = "btnCloseApplication";
+            this.btnCloseApplication.Size = new System.Drawing.Size(32, 35);
+            this.btnCloseApplication.TabIndex = 4;
+            this.btnCloseApplication.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCloseApplication.UseVisualStyleBackColor = true;
+            this.btnCloseApplication.Click += new System.EventHandler(this.btnCloseApplication_Click);
             // 
-            // mySecondCustmControl1
+            // addProductCustmControl
             // 
-            this.addProductCustmControl1.Location = new System.Drawing.Point(208, 141);
-            this.addProductCustmControl1.Name = "addProductCustmControl1";
-            this.addProductCustmControl1.Size = new System.Drawing.Size(818, 434);
-            this.addProductCustmControl1.TabIndex = 6;
+            this.addProductCustmControl.Location = new System.Drawing.Point(208, 141);
+            this.addProductCustmControl.Name = "addProductCustmControl";
+            this.addProductCustmControl.Size = new System.Drawing.Size(818, 434);
+            this.addProductCustmControl.TabIndex = 6;
             // 
-            // firstCustomControl1
+            // dashboardCustomControl
             // 
-            this.firstCustomControl1.Location = new System.Drawing.Point(209, 156);
-            this.firstCustomControl1.Name = "firstCustomControl1";
-            this.firstCustomControl1.Size = new System.Drawing.Size(805, 423);
-            this.firstCustomControl1.TabIndex = 5;
+            this.dashboardCustomControl.Location = new System.Drawing.Point(209, 156);
+            this.dashboardCustomControl.Name = "dashboardCustomControl";
+            this.dashboardCustomControl.Size = new System.Drawing.Size(805, 423);
+            this.dashboardCustomControl.TabIndex = 5;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1026, 578);
-            this.Controls.Add(this.addProductCustmControl1);
-            this.Controls.Add(this.firstCustomControl1);
+            this.Controls.Add(this.addProductCustmControl);
+            this.Controls.Add(this.dashboardCustomControl);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.button13);
+            this.Controls.Add(this.btnCloseApplication);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.button10);
@@ -432,9 +433,9 @@
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button13;
-        private FirstCustomControl firstCustomControl1;
-        private AddProductCustmControl addProductCustmControl1;
+        private System.Windows.Forms.Button btnCloseApplication;
+        private DashboardCustomControl dashboardCustomControl;
+        private AddProductCustmControl addProductCustmControl;
     }
 }
 

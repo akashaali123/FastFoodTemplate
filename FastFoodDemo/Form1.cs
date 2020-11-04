@@ -17,24 +17,29 @@ namespace FastFoodDemo
             InitializeComponent();
             SidePanel.Height = btnDashboard.Height;
             SidePanel.Top = btnDashboard.Top;
-            firstCustomControl1.BringToFront();
+            dashboardCustomControl.BringToFront();
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
             SidePanel.Height = btnDashboard.Height;
             SidePanel.Top = btnDashboard.Top;
-            firstCustomControl1.BringToFront();
+            dashboardCustomControl.BringToFront();
         }
 
         private void addProduct_Click(object sender, EventArgs e)
         {
             SidePanel.Height = addPrdouct.Height;
             SidePanel.Top = addPrdouct.Top;
-            addProductCustmControl1.BringToFront();
+            addProductCustmControl.BringToFront();
 
             //Thanks for watching Friends...
             //Please dont forget to Subscribe... :) :) :) 
+        }
+
+        private void btnCloseApplication_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
