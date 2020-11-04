@@ -31,7 +31,7 @@ namespace FastFoodDemo
         {
             SidePanel.Height = addPrdouct.Height;
             SidePanel.Top = addPrdouct.Top;
-            mySecondCustmControl1.BringToFront();
+            addProductCustmControl1.BringToFront();
 
             //Thanks for watching Friends...
             //Please dont forget to Subscribe... :) :) :) 

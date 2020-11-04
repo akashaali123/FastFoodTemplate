@@ -51,7 +51,7 @@
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
-            this.mySecondCustmControl1 = new FastFoodDemo.MySecondCustmControl();
+            this.addProductCustmControl1 = new FastFoodDemo.AddProductCustmControl();
             this.firstCustomControl1 = new FastFoodDemo.FirstCustomControl();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -367,10 +367,10 @@
             // 
             // mySecondCustmControl1
             // 
-            this.mySecondCustmControl1.Location = new System.Drawing.Point(208, 141);
-            this.mySecondCustmControl1.Name = "mySecondCustmControl1";
-            this.mySecondCustmControl1.Size = new System.Drawing.Size(818, 434);
-            this.mySecondCustmControl1.TabIndex = 6;
+            this.addProductCustmControl1.Location = new System.Drawing.Point(208, 141);
+            this.addProductCustmControl1.Name = "addProductCustmControl1";
+            this.addProductCustmControl1.Size = new System.Drawing.Size(818, 434);
+            this.addProductCustmControl1.TabIndex = 6;
             // 
             // firstCustomControl1
             // 
@@ -384,7 +384,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1026, 578);
-            this.Controls.Add(this.mySecondCustmControl1);
+            this.Controls.Add(this.addProductCustmControl1);
             this.Controls.Add(this.firstCustomControl1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button13);
@@ -434,7 +434,7 @@
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button13;
         private FirstCustomControl firstCustomControl1;
-        private MySecondCustmControl mySecondCustmControl1;
+        private AddProductCustmControl addProductCustmControl1;
     }
 }
 
