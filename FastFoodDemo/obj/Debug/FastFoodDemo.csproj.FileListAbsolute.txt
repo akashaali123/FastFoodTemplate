@@ -11,11 +11,13 @@ c:\users\salaar husceyn\documents\visual studio 2012\Projects\FastFoodDemo\FastF
 C:\Users\akasha.nasir\Desktop\FastFoodDemo\FastFoodDemo\bin\Debug\FastFoodDemo.exe.config
 C:\Users\akasha.nasir\Desktop\FastFoodDemo\FastFoodDemo\bin\Debug\FastFoodDemo.exe
 C:\Users\akasha.nasir\Desktop\FastFoodDemo\FastFoodDemo\bin\Debug\FastFoodDemo.pdb
-C:\Users\akasha.nasir\Desktop\FastFoodDemo\FastFoodDemo\obj\Debug\FastFoodDemo.csprojAssemblyReference.cache
-C:\Users\akasha.nasir\Desktop\FastFoodDemo\FastFoodDemo\obj\Debug\FastFoodDemo.FirstCustomControl.resources
 C:\Users\akasha.nasir\Desktop\FastFoodDemo\FastFoodDemo\obj\Debug\FastFoodDemo.Form1.resources
-C:\Users\akasha.nasir\Desktop\FastFoodDemo\FastFoodDemo\obj\Debug\FastFoodDemo.MySecondCustmControl.resources
 C:\Users\akasha.nasir\Desktop\FastFoodDemo\FastFoodDemo\obj\Debug\FastFoodDemo.Properties.Resources.resources
 C:\Users\akasha.nasir\Desktop\FastFoodDemo\FastFoodDemo\obj\Debug\FastFoodDemo.csproj.GenerateResource.cache
 C:\Users\akasha.nasir\Desktop\FastFoodDemo\FastFoodDemo\obj\Debug\FastFoodDemo.exe
 C:\Users\akasha.nasir\Desktop\FastFoodDemo\FastFoodDemo\obj\Debug\FastFoodDemo.pdb
+C:\Users\akasha.nasir\Desktop\FastFoodDemo\FastFoodDemo\obj\Debug\FastFoodDemo.addProductCustmControl.resources
+C:\Users\akasha.nasir\Desktop\FastFoodDemo\FastFoodDemo\obj\Debug\FastFoodDemo.DashboardCustomControl.resources
+C:\Users\akasha.nasir\Desktop\FastFoodDemo\FastFoodDemo\bin\Debug\Bunifu_UI_v1.52.dll
+C:\Users\akasha.nasir\Desktop\FastFoodDemo\FastFoodDemo\obj\Debug\FastFoodDemo.csprojAssemblyReference.cache
+C:\Users\akasha.nasir\Desktop\FastFoodDemo\FastFoodDemo\obj\Debug\FastFoodDemo.csproj.CopyComplete
