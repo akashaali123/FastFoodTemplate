@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MedicalStoreModelStoreContainer" CdmEntityContainer="MedicalStoreEntities">
+    <EntitySetMapping Name="tblProducts">
+      <EntityTypeMapping TypeName="MedicalStoreModel.tblProduct">
+        <MappingFragment StoreEntitySet="tblProduct">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="TotalTabletStock" ColumnName="TotalTabletStock" />
+          <ScalarProperty Name="TotalPurchasePrice" ColumnName="TotalPurchasePrice" />
+          <ScalarProperty Name="TotalSoldPrice" ColumnName="TotalSoldPrice" />
+          <ScalarProperty Name="TabletQuantityPerPacket" ColumnName="TabletQuantityPerPacket" />
+          <ScalarProperty Name="RetailPricePerUnit" ColumnName="RetailPricePerUnit" />
+          <ScalarProperty Name="SoldPricePerUnit" ColumnName="SoldPricePerUnit" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="Formula" ColumnName="Formula" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

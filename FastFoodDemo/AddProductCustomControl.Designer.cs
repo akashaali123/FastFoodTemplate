@@ -34,7 +34,6 @@
             this.lblRetailPrice = new System.Windows.Forms.Label();
             this.txtRetailPrice = new ns1.BunifuMetroTextbox();
             this.txtProductName = new ns1.BunifuMetroTextbox();
-            this.DrpCategory = new ns1.BunifuDropdown();
             this.txtSoldPrice = new ns1.BunifuMetroTextbox();
             this.lblSoldPrice = new System.Windows.Forms.Label();
             this.bunifuFlatButton1 = new ns1.BunifuFlatButton();
@@ -45,6 +44,8 @@
             this.lblTabletPerQunatity = new System.Windows.Forms.Label();
             this.txtQuantity = new ns1.BunifuMetroTextbox();
             this.lblQuantity = new System.Windows.Forms.Label();
+            this.drpCategory = new System.Windows.Forms.ComboBox();
+            this.lblMessage = new ns1.BunifuCustomLabel();
             this.SuspendLayout();
             // 
             // lblProductName
@@ -107,22 +108,6 @@
             this.txtProductName.Size = new System.Drawing.Size(205, 29);
             this.txtProductName.TabIndex = 1;
             this.txtProductName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // DrpCategory
-            // 
-            this.DrpCategory.BackColor = System.Drawing.Color.Transparent;
-            this.DrpCategory.BorderRadius = 3;
-            this.DrpCategory.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.DrpCategory.ForeColor = System.Drawing.Color.White;
-            this.DrpCategory.Items = new string[0];
-            this.DrpCategory.Location = new System.Drawing.Point(164, 132);
-            this.DrpCategory.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.DrpCategory.Name = "DrpCategory";
-            this.DrpCategory.NomalColor = System.Drawing.Color.Silver;
-            this.DrpCategory.onHoverColor = System.Drawing.Color.Green;
-            this.DrpCategory.selectedIndex = -1;
-            this.DrpCategory.Size = new System.Drawing.Size(203, 29);
-            this.DrpCategory.TabIndex = 3;
             // 
             // txtSoldPrice
             // 
@@ -251,6 +236,7 @@
             // 
             // txtQuantity
             // 
+            this.txtQuantity.BackColor = System.Drawing.SystemColors.Control;
             this.txtQuantity.BorderColorFocused = System.Drawing.Color.DimGray;
             this.txtQuantity.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtQuantity.BorderColorMouseHover = System.Drawing.Color.Green;
@@ -275,10 +261,34 @@
             this.lblQuantity.TabIndex = 18;
             this.lblQuantity.Text = "Quantity:";
             // 
+            // drpCategory
+            // 
+            this.drpCategory.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.drpCategory.BackColor = System.Drawing.SystemColors.Control;
+            this.drpCategory.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.drpCategory.FormattingEnabled = true;
+            this.drpCategory.Location = new System.Drawing.Point(162, 132);
+            this.drpCategory.Name = "drpCategory";
+            this.drpCategory.Size = new System.Drawing.Size(205, 25);
+            this.drpCategory.TabIndex = 3;
+            this.drpCategory.SelectedIndexChanged += new System.EventHandler(this.drpCategory_SelectedIndexChanged);
+            // 
+            // lblMessage
+            // 
+            this.lblMessage.AutoSize = true;
+            this.lblMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMessage.ForeColor = System.Drawing.Color.Red;
+            this.lblMessage.Location = new System.Drawing.Point(162, 351);
+            this.lblMessage.Name = "lblMessage";
+            this.lblMessage.Size = new System.Drawing.Size(0, 25);
+            this.lblMessage.TabIndex = 20;
+            // 
             // AddProductCustmControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lblMessage);
+            this.Controls.Add(this.drpCategory);
             this.Controls.Add(this.txtTablet);
             this.Controls.Add(this.lblTabletPerQunatity);
             this.Controls.Add(this.txtQuantity);
@@ -289,7 +299,6 @@
             this.Controls.Add(this.bunifuFlatButton1);
             this.Controls.Add(this.txtSoldPrice);
             this.Controls.Add(this.lblSoldPrice);
-            this.Controls.Add(this.DrpCategory);
             this.Controls.Add(this.txtProductName);
             this.Controls.Add(this.txtRetailPrice);
             this.Controls.Add(this.lblRetailPrice);
@@ -310,7 +319,6 @@
         private System.Windows.Forms.Label lblRetailPrice;
         private ns1.BunifuMetroTextbox txtRetailPrice;
         private ns1.BunifuMetroTextbox txtProductName;
-        private ns1.BunifuDropdown DrpCategory;
         private ns1.BunifuMetroTextbox txtSoldPrice;
         private System.Windows.Forms.Label lblSoldPrice;
         private ns1.BunifuFlatButton bunifuFlatButton1;
@@ -321,5 +329,7 @@
         private System.Windows.Forms.Label lblTabletPerQunatity;
         private ns1.BunifuMetroTextbox txtQuantity;
         private System.Windows.Forms.Label lblQuantity;
+        private System.Windows.Forms.ComboBox drpCategory;
+        private ns1.BunifuCustomLabel lblMessage;
     }
 }
