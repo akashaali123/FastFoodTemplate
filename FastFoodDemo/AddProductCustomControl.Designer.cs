@@ -41,9 +41,9 @@
             this.bunifuCustomLabel1 = new ns1.BunifuCustomLabel();
             this.txtFormula = new ns1.BunifuMetroTextbox();
             this.lblFormula = new System.Windows.Forms.Label();
-            this.bunifuMetroTextbox2 = new ns1.BunifuMetroTextbox();
+            this.txtTablet = new ns1.BunifuMetroTextbox();
             this.lblTabletPerQunatity = new System.Windows.Forms.Label();
-            this.bunifuMetroTextbox3 = new ns1.BunifuMetroTextbox();
+            this.txtQuantity = new ns1.BunifuMetroTextbox();
             this.lblQuantity = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -223,22 +223,22 @@
             this.lblFormula.TabIndex = 14;
             this.lblFormula.Text = "Formula:";
             // 
-            // bunifuMetroTextbox2
+            // txtTablet
             // 
-            this.bunifuMetroTextbox2.BorderColorFocused = System.Drawing.Color.DimGray;
-            this.bunifuMetroTextbox2.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox2.BorderColorMouseHover = System.Drawing.Color.Green;
-            this.bunifuMetroTextbox2.BorderThickness = 3;
-            this.bunifuMetroTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMetroTextbox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox2.isPassword = false;
-            this.bunifuMetroTextbox2.Location = new System.Drawing.Point(162, 203);
-            this.bunifuMetroTextbox2.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMetroTextbox2.Name = "bunifuMetroTextbox2";
-            this.bunifuMetroTextbox2.Size = new System.Drawing.Size(205, 29);
-            this.bunifuMetroTextbox2.TabIndex = 5;
-            this.bunifuMetroTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtTablet.BorderColorFocused = System.Drawing.Color.DimGray;
+            this.txtTablet.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtTablet.BorderColorMouseHover = System.Drawing.Color.Green;
+            this.txtTablet.BorderThickness = 3;
+            this.txtTablet.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTablet.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtTablet.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtTablet.isPassword = false;
+            this.txtTablet.Location = new System.Drawing.Point(162, 203);
+            this.txtTablet.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTablet.Name = "txtTablet";
+            this.txtTablet.Size = new System.Drawing.Size(205, 29);
+            this.txtTablet.TabIndex = 5;
+            this.txtTablet.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // lblTabletPerQunatity
             // 
@@ -249,22 +249,22 @@
             this.lblTabletPerQunatity.TabIndex = 19;
             this.lblTabletPerQunatity.Text = "Tablet/Quantiy:";
             // 
-            // bunifuMetroTextbox3
+            // txtQuantity
             // 
-            this.bunifuMetroTextbox3.BorderColorFocused = System.Drawing.Color.DimGray;
-            this.bunifuMetroTextbox3.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox3.BorderColorMouseHover = System.Drawing.Color.Green;
-            this.bunifuMetroTextbox3.BorderThickness = 3;
-            this.bunifuMetroTextbox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox3.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMetroTextbox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox3.isPassword = false;
-            this.bunifuMetroTextbox3.Location = new System.Drawing.Point(162, 166);
-            this.bunifuMetroTextbox3.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMetroTextbox3.Name = "bunifuMetroTextbox3";
-            this.bunifuMetroTextbox3.Size = new System.Drawing.Size(205, 29);
-            this.bunifuMetroTextbox3.TabIndex = 4;
-            this.bunifuMetroTextbox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtQuantity.BorderColorFocused = System.Drawing.Color.DimGray;
+            this.txtQuantity.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtQuantity.BorderColorMouseHover = System.Drawing.Color.Green;
+            this.txtQuantity.BorderThickness = 3;
+            this.txtQuantity.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtQuantity.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtQuantity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtQuantity.isPassword = false;
+            this.txtQuantity.Location = new System.Drawing.Point(162, 166);
+            this.txtQuantity.Margin = new System.Windows.Forms.Padding(4);
+            this.txtQuantity.Name = "txtQuantity";
+            this.txtQuantity.Size = new System.Drawing.Size(205, 29);
+            this.txtQuantity.TabIndex = 4;
+            this.txtQuantity.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // lblQuantity
             // 
@@ -279,9 +279,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.bunifuMetroTextbox2);
+            this.Controls.Add(this.txtTablet);
             this.Controls.Add(this.lblTabletPerQunatity);
-            this.Controls.Add(this.bunifuMetroTextbox3);
+            this.Controls.Add(this.txtQuantity);
             this.Controls.Add(this.lblQuantity);
             this.Controls.Add(this.txtFormula);
             this.Controls.Add(this.lblFormula);
@@ -297,6 +297,7 @@
             this.Controls.Add(this.lblProductName);
             this.Name = "AddProductCustmControl";
             this.Size = new System.Drawing.Size(817, 406);
+            this.Load += new System.EventHandler(this.AddProductCustmControl_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -316,9 +317,9 @@
         private ns1.BunifuCustomLabel bunifuCustomLabel1;
         private ns1.BunifuMetroTextbox txtFormula;
         private System.Windows.Forms.Label lblFormula;
-        private ns1.BunifuMetroTextbox bunifuMetroTextbox2;
+        private ns1.BunifuMetroTextbox txtTablet;
         private System.Windows.Forms.Label lblTabletPerQunatity;
-        private ns1.BunifuMetroTextbox bunifuMetroTextbox3;
+        private ns1.BunifuMetroTextbox txtQuantity;
         private System.Windows.Forms.Label lblQuantity;
     }
 }

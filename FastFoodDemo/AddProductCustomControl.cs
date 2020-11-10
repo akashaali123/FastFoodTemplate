@@ -19,7 +19,19 @@ namespace FastFoodDemo
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
+           
+            decimal purchasePrice = Convert.ToDecimal(txtRetailPrice.Text);
+            decimal soldPrice = Convert.ToDecimal(txtSoldPrice.Text);
+            int quantity = Convert.ToInt32(txtQuantity.Text);
+            int tablet = Convert.ToInt32(txtTablet.Text);
+            decimal spPerTablet = soldPrice / tablet;
+            decimal rpPerTablet = purchasePrice / tablet;
 
+        }
+
+        private void AddProductCustmControl_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }
