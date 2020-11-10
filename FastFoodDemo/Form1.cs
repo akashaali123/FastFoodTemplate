@@ -59,7 +59,8 @@ namespace FastFoodDemo
 
         private void sellCustomControl1_Load(object sender, EventArgs e)
         {
-          
+           
+            
         }
     }
 }

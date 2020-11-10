@@ -17,8 +17,9 @@ namespace FastFoodDemo
         private readonly ProductService _productService;
         public SellCustomControl()
         {
-            _productService = new ProductService();
             InitializeComponent();
+           _productService = new ProductService();
+           
           
         }
 
@@ -29,22 +30,23 @@ namespace FastFoodDemo
 
         private void SellCustomControl_Load(object sender, EventArgs e)
         {
-            var product = _productService.GetAllProductInfo();
-            List<ProductModel> model = product.Select(x => new ProductModel { ProductName = x.ProductName + "-" + x.Formula, Id = x.Id }).ToList();
-            model.Insert(0, new ProductModel { Id = 0, ProductName = "please select" });
-            drpProduct.DisplayMember = "ProductName";
-            drpProduct.ValueMember = "Id";
-            drpProduct.DataSource = model;
-            drpProduct.SelectedIndex = 0;
+            try
+            {
 
-
-
-            List<Category> category = new List<Category>{new Category{ Id=1,Name="Medicine"},
+                List<Category> category = new List<Category>{new Category{ Id=1,Name="Medicine"},
                                      new Category{ Id=2,Name="Syrup"},
                                      new Category{ Id=3,Name="General"} };
-            drpCategory.DisplayMember = "Name";
-            drpCategory.ValueMember = "Id";
-            drpCategory.DataSource = category;
+                drpCategory.DisplayMember = "Name";
+                drpCategory.ValueMember = "Id";
+                drpCategory.DataSource = category;
+                
+            }
+            catch (Exception ex)
+            {
+
+                
+            }
+           
 
         }
 
@@ -97,6 +99,27 @@ namespace FastFoodDemo
 
                 lblUnitPrice.Text = "";
             }
+        }
+
+        private void drpCategory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                int categoryId = Convert.ToInt32(drpCategory.SelectedValue.ToString());
+
+                var product = _productService.GetProductByCategory(categoryId);
+                List<ProductModel> model = product.Select(x => new ProductModel { ProductName = x.ProductName + "-" + x.Formula, Id = x.Id }).ToList();
+                //model.Insert(0, new ProductModel { Id = 0, ProductName = "please select" });
+                drpProduct.DisplayMember = "ProductName";
+                drpProduct.ValueMember = "Id";
+                drpProduct.DataSource = model;
+                drpProduct.SelectedIndex = 0;
+            }
+            catch (Exception ex)
+            {
+
+            }
+            
         }
     }
 }

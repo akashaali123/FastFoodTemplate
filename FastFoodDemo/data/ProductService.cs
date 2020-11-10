@@ -81,5 +81,25 @@ namespace FastFoodDemo.data
             }
            
         }
+
+        public List<ProductModel> GetProductByCategory(int categoryId)
+        {
+            try
+            {
+                return _context.tblProducts.Where(x=>x.CategoryId == categoryId).Select(x => new ProductModel
+                {
+                    Id = x.Id,
+                    ProductName = x.ProductName,
+                    Formula = x.Formula
+
+                }).ToList();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+        }
     }
 }

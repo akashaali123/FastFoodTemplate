@@ -74,6 +74,7 @@
             this.drpCategory.Name = "drpCategory";
             this.drpCategory.Size = new System.Drawing.Size(132, 28);
             this.drpCategory.TabIndex = 15;
+            this.drpCategory.SelectedIndexChanged += new System.EventHandler(this.drpCategory_SelectedIndexChanged);
             // 
             // label1
             // 
