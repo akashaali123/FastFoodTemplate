@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="MedicalStoreModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="MedicalStoreModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="tblProduct">
           <Key>
             <PropertyRef Name="Id" />
@@ -27,13 +27,11 @@
         <EntityContainer Name="MedicalStoreModelStoreContainer">
           <EntitySet Name="tblProduct" EntityType="Self.tblProduct" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema></edmx:StorageModels>
+      </Schema>
+    </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="MedicalStoreModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityContainer Name="MedicalStoreEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="tblProducts" EntityType="MedicalStoreModel.tblProduct" />
-        </EntityContainer>
         <EntityType Name="tblProduct">
           <Key>
             <PropertyRef Name="Id" />
@@ -53,6 +51,9 @@
           <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
           <Property Name="IsActive" Type="Boolean" />
         </EntityType>
+        <EntityContainer Name="MedicalStoreEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tblProducts" EntityType="Self.tblProduct" />
+        </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -62,20 +63,20 @@
           <EntitySetMapping Name="tblProducts">
             <EntityTypeMapping TypeName="MedicalStoreModel.tblProduct">
               <MappingFragment StoreEntitySet="tblProduct">
-                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
-                <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
-                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
-                <ScalarProperty Name="TotalTabletStock" ColumnName="TotalTabletStock" />
-                <ScalarProperty Name="TotalPurchasePrice" ColumnName="TotalPurchasePrice" />
-                <ScalarProperty Name="TotalSoldPrice" ColumnName="TotalSoldPrice" />
-                <ScalarProperty Name="TabletQuantityPerPacket" ColumnName="TabletQuantityPerPacket" />
-                <ScalarProperty Name="RetailPricePerUnit" ColumnName="RetailPricePerUnit" />
-                <ScalarProperty Name="SoldPricePerUnit" ColumnName="SoldPricePerUnit" />
-                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
-                <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
-                <ScalarProperty Name="Formula" ColumnName="Formula" />
-                <ScalarProperty Name="ProductName" ColumnName="ProductName" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+                <ScalarProperty Name="Formula" ColumnName="Formula" />
+                <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="SoldPricePerUnit" ColumnName="SoldPricePerUnit" />
+                <ScalarProperty Name="RetailPricePerUnit" ColumnName="RetailPricePerUnit" />
+                <ScalarProperty Name="TabletQuantityPerPacket" ColumnName="TabletQuantityPerPacket" />
+                <ScalarProperty Name="TotalSoldPrice" ColumnName="TotalSoldPrice" />
+                <ScalarProperty Name="TotalPurchasePrice" ColumnName="TotalPurchasePrice" />
+                <ScalarProperty Name="TotalTabletStock" ColumnName="TotalTabletStock" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

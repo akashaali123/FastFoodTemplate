@@ -129,7 +129,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
             this.Name = "DashboardCustomControl";
-            this.Size = new System.Drawing.Size(817, 423);
+            this.Size = new System.Drawing.Size(817, 499);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

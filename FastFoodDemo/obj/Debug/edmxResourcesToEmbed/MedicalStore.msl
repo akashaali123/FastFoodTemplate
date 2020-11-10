@@ -4,20 +4,20 @@
     <EntitySetMapping Name="tblProducts">
       <EntityTypeMapping TypeName="MedicalStoreModel.tblProduct">
         <MappingFragment StoreEntitySet="tblProduct">
-          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
-          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
-          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
-          <ScalarProperty Name="TotalTabletStock" ColumnName="TotalTabletStock" />
-          <ScalarProperty Name="TotalPurchasePrice" ColumnName="TotalPurchasePrice" />
-          <ScalarProperty Name="TotalSoldPrice" ColumnName="TotalSoldPrice" />
-          <ScalarProperty Name="TabletQuantityPerPacket" ColumnName="TabletQuantityPerPacket" />
-          <ScalarProperty Name="RetailPricePerUnit" ColumnName="RetailPricePerUnit" />
-          <ScalarProperty Name="SoldPricePerUnit" ColumnName="SoldPricePerUnit" />
-          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
-          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
-          <ScalarProperty Name="Formula" ColumnName="Formula" />
-          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
           <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="Formula" ColumnName="Formula" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="SoldPricePerUnit" ColumnName="SoldPricePerUnit" />
+          <ScalarProperty Name="RetailPricePerUnit" ColumnName="RetailPricePerUnit" />
+          <ScalarProperty Name="TabletQuantityPerPacket" ColumnName="TabletQuantityPerPacket" />
+          <ScalarProperty Name="TotalSoldPrice" ColumnName="TotalSoldPrice" />
+          <ScalarProperty Name="TotalPurchasePrice" ColumnName="TotalPurchasePrice" />
+          <ScalarProperty Name="TotalTabletStock" ColumnName="TotalTabletStock" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

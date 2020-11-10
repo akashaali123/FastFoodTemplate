@@ -13,7 +13,7 @@ namespace FastFoodDemo.data
 
         public ProductService()
         {
-            _context =new MedicalStoreEntities();
+            _context = new MedicalStoreEntities();
         }
 
         public bool AddProduct(ProductModel model)
@@ -44,6 +44,40 @@ namespace FastFoodDemo.data
             {
 
                 return false;
+            }
+
+        }
+
+        public List<ProductModel> GetAllProductInfo()
+        {
+            try
+            {
+                return _context.tblProducts.Select(x => new ProductModel
+                {
+                    Id = x.Id,
+                    ProductName = x.ProductName,
+                    Formula = x.Formula
+
+                }).ToList();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+        }
+
+        public tblProduct GetProductById(int id)
+        {
+            try
+            {
+                return _context.tblProducts.Where(x => x.Id == id).FirstOrDefault();
+            }
+            catch (Exception)
+            {
+
+                throw;
             }
            
         }

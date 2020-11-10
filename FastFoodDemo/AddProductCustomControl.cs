@@ -56,8 +56,8 @@ namespace FastFoodDemo
                 model.TotalSoldPrice = soldPrice * quantity;
                 model.TotalPurchasePrice = purchasePrice * quantity;
 
-               bool isSave =  _productService.AddProduct(model);
-                if(isSave)
+                bool isSave = _productService.AddProduct(model);
+                if (isSave)
                 {
                     lblMessage.ForeColor = Color.Green;
                     lblMessage.Text = "Product Save";
@@ -70,7 +70,7 @@ namespace FastFoodDemo
                         t.Stop();
                     };
                     t.Start();
-                    AddProductCustmControl_Load(sender,e);
+                    AddProductCustmControl_Load(sender, e);
                 }
                 else
                 {
@@ -92,7 +92,7 @@ namespace FastFoodDemo
 
                 throw;
             }
-            
+
         }
 
         private void AddProductCustmControl_Load(object sender, EventArgs e)
@@ -115,7 +115,7 @@ namespace FastFoodDemo
 
         private void DrpCategory_onItemSelected(object sender, EventArgs e)
         {
-            
+
         }
 
         private void drpCategory_SelectedIndexChanged(object sender, EventArgs e)

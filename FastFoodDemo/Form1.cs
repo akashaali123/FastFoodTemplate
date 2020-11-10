@@ -12,6 +12,7 @@ namespace FastFoodDemo
 {
     public partial class Form1 : Form
     {
+        
         public Form1()
         {
             InitializeComponent();
@@ -40,6 +41,25 @@ namespace FastFoodDemo
         private void btnCloseApplication_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSell_Click(object sender, EventArgs e)
+        {
+            SidePanel.Height = btnSell.Height;
+            SidePanel.Top = btnSell.Top;
+            sellCustomControl1.BringToFront();
+            
+
+        }
+
+        private void sellCustomControl1_Load(object sender, EventArgs e)
+        {
+          
         }
     }
 }

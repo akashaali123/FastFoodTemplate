@@ -1,8 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="MedicalStoreModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-  <EntityContainer Name="MedicalStoreEntities" annotation:LazyLoadingEnabled="true">
-    <EntitySet Name="tblProducts" EntityType="MedicalStoreModel.tblProduct" />
-  </EntityContainer>
   <EntityType Name="tblProduct">
     <Key>
       <PropertyRef Name="Id" />
@@ -22,4 +19,7 @@
     <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
     <Property Name="IsActive" Type="Boolean" />
   </EntityType>
+  <EntityContainer Name="MedicalStoreEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tblProducts" EntityType="Self.tblProduct" />
+  </EntityContainer>
 </Schema>

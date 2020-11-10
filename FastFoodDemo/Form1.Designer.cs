@@ -35,7 +35,7 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnSell = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.addPrdouct = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
@@ -53,6 +53,7 @@
             this.btnCloseApplication = new System.Windows.Forms.Button();
             this.addProductCustmControl = new FastFoodDemo.AddProductCustmControl();
             this.dashboardCustomControl = new FastFoodDemo.DashboardCustomControl();
+            this.sellCustomControl1 = new FastFoodDemo.SellCustomControl();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -66,14 +67,14 @@
             this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.btnSell);
             this.panel1.Controls.Add(this.button14);
             this.panel1.Controls.Add(this.addPrdouct);
             this.panel1.Controls.Add(this.btnDashboard);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(209, 578);
+            this.panel1.Size = new System.Drawing.Size(209, 629);
             this.panel1.TabIndex = 0;
             // 
             // SidePanel
@@ -148,21 +149,22 @@
             this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnSell
             // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(12, 167);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(197, 54);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "       Collection";
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnSell.FlatAppearance.BorderSize = 0;
+            this.btnSell.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSell.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSell.ForeColor = System.Drawing.Color.White;
+            this.btnSell.Image = ((System.Drawing.Image)(resources.GetObject("btnSell.Image")));
+            this.btnSell.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSell.Location = new System.Drawing.Point(12, 167);
+            this.btnSell.Name = "btnSell";
+            this.btnSell.Size = new System.Drawing.Size(197, 54);
+            this.btnSell.TabIndex = 4;
+            this.btnSell.Text = "       Sell Product";
+            this.btnSell.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSell.UseVisualStyleBackColor = true;
+            this.btnSell.Click += new System.EventHandler(this.btnSell_Click);
             // 
             // button14
             // 
@@ -171,7 +173,7 @@
             this.button14.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button14.ForeColor = System.Drawing.Color.White;
             this.button14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button14.Location = new System.Drawing.Point(3, 546);
+            this.button14.Location = new System.Drawing.Point(3, 583);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(36, 34);
             this.button14.TabIndex = 4;
@@ -230,7 +232,7 @@
             this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Location = new System.Drawing.Point(243, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(111, 135);
+            this.panel3.Size = new System.Drawing.Size(111, 138);
             this.panel3.TabIndex = 2;
             // 
             // label3
@@ -368,23 +370,32 @@
             // 
             // addProductCustmControl
             // 
-            this.addProductCustmControl.Location = new System.Drawing.Point(208, 141);
+            this.addProductCustmControl.Location = new System.Drawing.Point(208, 144);
             this.addProductCustmControl.Name = "addProductCustmControl";
-            this.addProductCustmControl.Size = new System.Drawing.Size(818, 434);
+            this.addProductCustmControl.Size = new System.Drawing.Size(818, 435);
             this.addProductCustmControl.TabIndex = 6;
             // 
             // dashboardCustomControl
             // 
-            this.dashboardCustomControl.Location = new System.Drawing.Point(209, 156);
+            this.dashboardCustomControl.Location = new System.Drawing.Point(209, 128);
             this.dashboardCustomControl.Name = "dashboardCustomControl";
-            this.dashboardCustomControl.Size = new System.Drawing.Size(805, 423);
+            this.dashboardCustomControl.Size = new System.Drawing.Size(805, 498);
             this.dashboardCustomControl.TabIndex = 5;
+            // 
+            // sellCustomControl1
+            // 
+            this.sellCustomControl1.Location = new System.Drawing.Point(208, 135);
+            this.sellCustomControl1.Name = "sellCustomControl1";
+            this.sellCustomControl1.Size = new System.Drawing.Size(818, 494);
+            this.sellCustomControl1.TabIndex = 7;
+            this.sellCustomControl1.Load += new System.EventHandler(this.sellCustomControl1_Load);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1026, 578);
+            this.ClientSize = new System.Drawing.Size(1026, 629);
+            this.Controls.Add(this.sellCustomControl1);
             this.Controls.Add(this.addProductCustmControl);
             this.Controls.Add(this.dashboardCustomControl);
             this.Controls.Add(this.label4);
@@ -401,6 +412,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -425,7 +437,7 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnSell;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button8;
@@ -436,6 +448,7 @@
         private System.Windows.Forms.Button btnCloseApplication;
         private DashboardCustomControl dashboardCustomControl;
         private AddProductCustmControl addProductCustmControl;
+        private SellCustomControl sellCustomControl1;
     }
 }
 
