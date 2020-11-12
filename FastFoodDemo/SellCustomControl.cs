@@ -33,9 +33,9 @@ namespace FastFoodDemo
             try
             {
 
-                List<Category> category = new List<Category>{new Category{ Id=1,Name="Medicine"},
-                                     new Category{ Id=2,Name="Syrup"},
-                                     new Category{ Id=3,Name="General"} };
+                List<CategoryModel> category = new List<CategoryModel>{new CategoryModel{ Id=1,Name="Medicine"},
+                                     new CategoryModel{ Id=2,Name="Syrup"},
+                                     new CategoryModel{ Id=3,Name="General"} };
                 drpCategory.DisplayMember = "Name";
                 drpCategory.ValueMember = "Id";
                 drpCategory.DataSource = category;
@@ -88,11 +88,23 @@ namespace FastFoodDemo
         {
             try
             {
+
                 int qty = 1;
-                decimal price = Convert.ToDecimal(txtSp.Text.ToString());
+                decimal price = 1;
+                if (txtAp.Text == "")
+                {
+                    price = Convert.ToDecimal(txtSp.Text.ToString());
+                }
+                else
+                {
+                    price = Convert.ToDecimal(txtAp.Text.ToString());
+                }
+               
                 qty = Convert.ToInt32(txtQty.Text.ToString());
                 decimal totalUnitPrice = price * qty;
                 lblUnitPrice.Text = Convert.ToString(totalUnitPrice);
+
+
             }
             catch (Exception ex)
             {
@@ -121,5 +133,71 @@ namespace FastFoodDemo
             }
             
         }
+
+        private void addToCart_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string productName = ((ProductModel)drpProduct.SelectedItem).ProductName;
+                string category = ((CategoryModel)drpCategory.SelectedItem).Name;
+
+
+                int rowIndex = cartGrid.NewRowIndex;
+
+                DataGridViewRow row = (DataGridViewRow)cartGrid.Rows[0].Clone();
+                row.Cells[0].Value = productName;
+                row.Cells[1].Value = category;
+                row.Cells[2].Value = txtQty.Text;
+                row.Cells[3].Value = txtSp.Text;
+                row.Cells[4].Value = lblUnitPrice.Text;
+                cartGrid.Rows.Add(row);
+
+                DataTable dt = new DataTable();
+                foreach (DataGridViewColumn col in cartGrid.Columns)
+                {
+                    dt.Columns.Add(col.Name);
+                }
+
+                foreach (DataGridViewRow row1 in cartGrid.Rows)
+                {
+                    DataRow dRow = dt.NewRow();
+                    foreach (DataGridViewCell cell in row1.Cells)
+                    {
+                        dRow[cell.ColumnIndex] = cell.Value;
+                    }
+                    dt.Rows.Add(dRow);
+                }
+
+                double totalPrice = dt.AsEnumerable().Select(x => Convert.ToDouble(x[4] == DBNull.Value ? 0 : x[4])).Sum();
+                lblNetBill.Text = totalPrice.ToString();
+            }
+            catch (Exception ex)
+            {
+
+         
+            }
+           
+        }
+
+        private void txtAp_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                int qty = 1;
+                decimal price = 1;
+                price = Convert.ToDecimal(txtAp.Text.ToString());
+                qty = Convert.ToInt32(txtQty.Text.ToString());
+                decimal totalUnitPrice = price * qty;
+                lblUnitPrice.Text = Convert.ToString(totalUnitPrice);
+            }
+            catch (Exception ex)
+            {
+
+                
+            }
+            
+        }
+
+       
     }
 }

@@ -221,7 +221,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(209, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(817, 10);
+            this.panel2.Size = new System.Drawing.Size(832, 10);
             this.panel2.TabIndex = 1;
             // 
             // panel3
@@ -386,7 +386,7 @@
             // 
             this.sellCustomControl1.Location = new System.Drawing.Point(208, 135);
             this.sellCustomControl1.Name = "sellCustomControl1";
-            this.sellCustomControl1.Size = new System.Drawing.Size(818, 494);
+            this.sellCustomControl1.Size = new System.Drawing.Size(828, 494);
             this.sellCustomControl1.TabIndex = 7;
             this.sellCustomControl1.Load += new System.EventHandler(this.sellCustomControl1_Load);
             // 
@@ -394,7 +394,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1026, 629);
+            this.ClientSize = new System.Drawing.Size(1041, 629);
             this.Controls.Add(this.sellCustomControl1);
             this.Controls.Add(this.addProductCustmControl);
             this.Controls.Add(this.dashboardCustomControl);

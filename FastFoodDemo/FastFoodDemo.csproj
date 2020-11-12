@@ -94,7 +94,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>MedicalStore.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Model\Category.cs" />
+    <Compile Include="Model\CategoryModel.cs" />
     <Compile Include="Model\ProductModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

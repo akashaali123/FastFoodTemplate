@@ -43,7 +43,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.txtQty = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.cartGrid = new System.Windows.Forms.DataGridView();
             this.ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Qty = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,7 +53,15 @@
             this.addToCart = new ns1.BunifuFlatButton();
             this.lblUnitPrice = new ns1.BunifuCustomLabel();
             this.label7 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lblBill = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.lblNetBill = new ns1.BunifuCustomLabel();
+            this.lblDiscountRate = new ns1.BunifuCustomLabel();
+            this.lblGrossBill = new ns1.BunifuCustomLabel();
+            ((System.ComponentModel.ISupportInitialize)(this.cartGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuCustomLabel1
@@ -120,6 +128,7 @@
             this.txtAp.Name = "txtAp";
             this.txtAp.Size = new System.Drawing.Size(50, 26);
             this.txtAp.TabIndex = 22;
+            this.txtAp.TextChanged += new System.EventHandler(this.txtAp_TextChanged);
             // 
             // label4
             // 
@@ -173,21 +182,21 @@
             this.txtQty.TabIndex = 30;
             this.txtQty.TextChanged += new System.EventHandler(this.txtQty_TextChanged);
             // 
-            // dataGridView1
+            // cartGrid
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.cartGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.cartGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ProductName,
             this.Category,
             this.Qty,
             this.UnitPrice,
             this.TotalPrice,
             this.Action});
-            this.dataGridView1.Location = new System.Drawing.Point(10, 186);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(643, 207);
-            this.dataGridView1.TabIndex = 31;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.cartGrid.Location = new System.Drawing.Point(-9, 187);
+            this.cartGrid.Name = "cartGrid";
+            this.cartGrid.Size = new System.Drawing.Size(643, 231);
+            this.cartGrid.TabIndex = 31;
+            this.cartGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // ProductName
             // 
@@ -243,7 +252,7 @@
             this.addToCart.IconVisible = true;
             this.addToCart.IconZoom = 90D;
             this.addToCart.IsTab = false;
-            this.addToCart.Location = new System.Drawing.Point(589, 90);
+            this.addToCart.Location = new System.Drawing.Point(601, 90);
             this.addToCart.Name = "addToCart";
             this.addToCart.Normalcolor = System.Drawing.Color.DarkGray;
             this.addToCart.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -255,6 +264,7 @@
             this.addToCart.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.addToCart.Textcolor = System.Drawing.Color.White;
             this.addToCart.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addToCart.Click += new System.EventHandler(this.addToCart_Click);
             // 
             // lblUnitPrice
             // 
@@ -274,14 +284,96 @@
             this.label7.TabIndex = 34;
             this.label7.Text = "Price: ";
             // 
+            // label8
+            // 
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.label8.Location = new System.Drawing.Point(313, 131);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(89, 28);
+            this.label8.TabIndex = 35;
+            this.label8.Text = "Discount:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.textBox1.Location = new System.Drawing.Point(408, 131);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(139, 26);
+            this.textBox1.TabIndex = 36;
+            // 
+            // lblBill
+            // 
+            this.lblBill.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.lblBill.Location = new System.Drawing.Point(675, 176);
+            this.lblBill.Name = "lblBill";
+            this.lblBill.Size = new System.Drawing.Size(81, 28);
+            this.lblBill.TabIndex = 37;
+            this.lblBill.Text = "Net Bill: ";
+            // 
+            // label10
+            // 
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.label10.Location = new System.Drawing.Point(675, 273);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(88, 28);
+            this.label10.TabIndex = 38;
+            this.label10.Text = "Discount:";
+            // 
+            // label9
+            // 
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.label9.Location = new System.Drawing.Point(675, 357);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(97, 28);
+            this.label9.TabIndex = 39;
+            this.label9.Text = "Gross Bill:";
+            // 
+            // lblNetBill
+            // 
+            this.lblNetBill.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblNetBill.ForeColor = System.Drawing.Color.DarkRed;
+            this.lblNetBill.Location = new System.Drawing.Point(640, 204);
+            this.lblNetBill.Name = "lblNetBill";
+            this.lblNetBill.Size = new System.Drawing.Size(166, 28);
+            this.lblNetBill.TabIndex = 40;
+            this.lblNetBill.Text = "Hi";
+            // 
+            // lblDiscountRate
+            // 
+            this.lblDiscountRate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblDiscountRate.ForeColor = System.Drawing.Color.DarkRed;
+            this.lblDiscountRate.Location = new System.Drawing.Point(640, 301);
+            this.lblDiscountRate.Name = "lblDiscountRate";
+            this.lblDiscountRate.Size = new System.Drawing.Size(166, 28);
+            this.lblDiscountRate.TabIndex = 41;
+            this.lblDiscountRate.Text = "Hi";
+            // 
+            // lblGrossBill
+            // 
+            this.lblGrossBill.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblGrossBill.ForeColor = System.Drawing.Color.DarkRed;
+            this.lblGrossBill.Location = new System.Drawing.Point(640, 397);
+            this.lblGrossBill.Name = "lblGrossBill";
+            this.lblGrossBill.Size = new System.Drawing.Size(166, 28);
+            this.lblGrossBill.TabIndex = 42;
+            this.lblGrossBill.Text = "Hi";
+            // 
             // SellCustomControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lblGrossBill);
+            this.Controls.Add(this.lblDiscountRate);
+            this.Controls.Add(this.lblNetBill);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.lblBill);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.lblUnitPrice);
             this.Controls.Add(this.addToCart);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.cartGrid);
             this.Controls.Add(this.txtQty);
             this.Controls.Add(this.txtStock);
             this.Controls.Add(this.label6);
@@ -296,9 +388,9 @@
             this.Controls.Add(this.drpCategory);
             this.Controls.Add(this.bunifuCustomLabel1);
             this.Name = "SellCustomControl";
-            this.Size = new System.Drawing.Size(786, 438);
+            this.Size = new System.Drawing.Size(817, 438);
             this.Load += new System.EventHandler(this.SellCustomControl_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cartGrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -326,9 +418,17 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn UnitPrice;
         private System.Windows.Forms.DataGridViewTextBoxColumn TotalPrice;
         private System.Windows.Forms.DataGridViewButtonColumn Action;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView cartGrid;
         private ns1.BunifuFlatButton addToCart;
         private ns1.BunifuCustomLabel lblUnitPrice;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label lblBill;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private ns1.BunifuCustomLabel lblNetBill;
+        private ns1.BunifuCustomLabel lblDiscountRate;
+        private ns1.BunifuCustomLabel lblGrossBill;
     }
 }

@@ -97,9 +97,9 @@ namespace FastFoodDemo
 
         private void AddProductCustmControl_Load(object sender, EventArgs e)
         {
-            List<Category> category = new List<Category>{new Category{ Id=1,Name="Medicine"},
-                                     new Category{ Id=2,Name="Syrup"},
-                                     new Category{ Id=3,Name="General"} };
+            List<CategoryModel> category = new List<CategoryModel>{new CategoryModel{ Id=1,Name="Medicine"},
+                                     new CategoryModel{ Id=2,Name="Syrup"},
+                                     new CategoryModel{ Id=3,Name="General"} };
 
             drpCategory.DataSource = category;
             drpCategory.DisplayMember = "Name";

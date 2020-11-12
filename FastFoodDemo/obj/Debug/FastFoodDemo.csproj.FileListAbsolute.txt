@@ -25,3 +25,4 @@ C:\Users\akasha.nasir\Desktop\FastFoodDemo\FastFoodDemo\obj\Debug\FastFoodDemo.c
 C:\Users\akasha.nasir\Desktop\FastFoodDemo\FastFoodDemo\obj\Debug\FastFoodDemo.csproj.CopyComplete
 C:\Users\akasha.nasir\Desktop\FastFoodDemo\FastFoodDemo\obj\Debug\FastFoodDemo.exe
 C:\Users\akasha.nasir\Desktop\FastFoodDemo\FastFoodDemo\obj\Debug\FastFoodDemo.pdb
+C:\Users\akasha.nasir\Desktop\FastFoodDemo\FastFoodDemo\obj\Debug\FastFoodDemo.csprojAssemblyReference.cache

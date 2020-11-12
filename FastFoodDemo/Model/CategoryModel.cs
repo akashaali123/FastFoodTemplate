@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FastFoodDemo.Model
 {
-    public class Category
+    public class CategoryModel
     {
         public int Id { get; set; }
 
