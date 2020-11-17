@@ -16,9 +16,9 @@ namespace FastFoodDemo
         public Form1()
         {
             InitializeComponent();
-            SidePanel.Height = btnDashboard.Height;
-            SidePanel.Top = btnDashboard.Top;
-            dashboardCustomControl.BringToFront();
+            //SidePanel.Height = btnDashboard.Height;
+            //SidePanel.Top = btnDashboard.Top;
+            //dashboardCustomControl.BringToFront();
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)
@@ -45,7 +45,10 @@ namespace FastFoodDemo
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            SidePanel.Height = btnDashboard.Height;
+            SidePanel.Top = btnDashboard.Top;
+            dashboardCustomControl.BringToFront();
+            
         }
 
         private void btnSell_Click(object sender, EventArgs e)
@@ -53,14 +56,20 @@ namespace FastFoodDemo
             SidePanel.Height = btnSell.Height;
             SidePanel.Top = btnSell.Top;
             sellCustomControl1.BringToFront();
-            
-
-        }
-
-        private void sellCustomControl1_Load(object sender, EventArgs e)
-        {
            
-            
         }
+
+        private void btnAllProduct_Click(object sender, EventArgs e)
+        {
+            SidePanel.Height = btnSell.Height;
+            SidePanel.Top = btnSell.Top;
+            allProductControl1.BringToFront();
+        }
+
+        //private void sellCustomControl1_Load(object sender, EventArgs e)
+        //{
+
+
+        //}
     }
 }

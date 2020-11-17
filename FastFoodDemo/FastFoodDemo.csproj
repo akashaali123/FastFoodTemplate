@@ -60,6 +60,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AllProductControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AllProductControl.Designer.cs">
+      <DependentUpon>AllProductControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="data\ProductService.cs" />
     <Compile Include="FirstCustomControl.cs">
       <SubType>UserControl</SubType>
@@ -107,6 +113,9 @@
     <Compile Include="tblProduct.cs">
       <DependentUpon>MedicalStore.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AllProductControl.resx">
+      <DependentUpon>AllProductControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FirstCustomControl.resx">
       <DependentUpon>FirstCustomControl.cs</DependentUpon>
     </EmbeddedResource>
