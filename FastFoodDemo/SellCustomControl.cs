@@ -39,7 +39,6 @@ namespace FastFoodDemo
                 drpCategory.DisplayMember = "Name";
                 drpCategory.ValueMember = "Id";
                 drpCategory.DataSource = category;
-                
             }
             catch (Exception ex)
             {
@@ -198,6 +197,9 @@ namespace FastFoodDemo
             
         }
 
-       
+        private void lblUnitPrice_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

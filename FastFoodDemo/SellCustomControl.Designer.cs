@@ -61,6 +61,7 @@
             this.lblNetBill = new ns1.BunifuCustomLabel();
             this.lblDiscountRate = new ns1.BunifuCustomLabel();
             this.lblGrossBill = new ns1.BunifuCustomLabel();
+            this.Save = new ns1.BunifuFlatButton();
             ((System.ComponentModel.ISupportInitialize)(this.cartGrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -144,7 +145,7 @@
             this.txtSp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtSp.Location = new System.Drawing.Point(228, 90);
             this.txtSp.Name = "txtSp";
-            this.txtSp.Size = new System.Drawing.Size(50, 26);
+            this.txtSp.Size = new System.Drawing.Size(52, 26);
             this.txtSp.TabIndex = 24;
             // 
             // label5
@@ -274,6 +275,7 @@
             this.lblUnitPrice.Name = "lblUnitPrice";
             this.lblUnitPrice.Size = new System.Drawing.Size(166, 28);
             this.lblUnitPrice.TabIndex = 33;
+            this.lblUnitPrice.Click += new System.EventHandler(this.lblUnitPrice_Click);
             // 
             // label7
             // 
@@ -358,6 +360,41 @@
             this.lblGrossBill.TabIndex = 42;
             this.lblGrossBill.Text = "Hi";
             // 
+            // Save
+            // 
+            this.Save.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.Save.BackColor = System.Drawing.Color.SlateGray;
+            this.Save.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Save.BorderRadius = 0;
+            this.Save.ButtonText = "Save";
+            this.Save.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Save.DisabledColor = System.Drawing.Color.Gray;
+            this.Save.Iconcolor = System.Drawing.Color.Transparent;
+            this.Save.Iconimage = ((System.Drawing.Image)(resources.GetObject("Save.Iconimage")));
+            this.Save.Iconimage_right = null;
+            this.Save.Iconimage_right_Selected = null;
+            this.Save.Iconimage_Selected = null;
+            this.Save.IconMarginLeft = 0;
+            this.Save.IconMarginRight = 0;
+            this.Save.IconRightVisible = true;
+            this.Save.IconRightZoom = 0D;
+            this.Save.IconVisible = true;
+            this.Save.IconZoom = 90D;
+            this.Save.IsTab = false;
+            this.Save.Location = new System.Drawing.Point(601, 131);
+            this.Save.Name = "Save";
+            this.Save.Normalcolor = System.Drawing.Color.DarkGray;
+            this.Save.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.Save.OnHoverTextColor = System.Drawing.Color.White;
+            this.Save.selected = false;
+            this.Save.Size = new System.Drawing.Size(155, 28);
+            this.Save.TabIndex = 32;
+            this.Save.Text = "Save";
+            this.Save.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Save.Textcolor = System.Drawing.Color.White;
+            this.Save.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Save.Click += new System.EventHandler(this.addToCart_Click);
+            // 
             // SellCustomControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -372,6 +409,7 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.lblUnitPrice);
+            this.Controls.Add(this.Save);
             this.Controls.Add(this.addToCart);
             this.Controls.Add(this.cartGrid);
             this.Controls.Add(this.txtQty);
@@ -430,5 +468,6 @@
         private ns1.BunifuCustomLabel lblNetBill;
         private ns1.BunifuCustomLabel lblDiscountRate;
         private ns1.BunifuCustomLabel lblGrossBill;
+        private ns1.BunifuFlatButton Save;
     }
 }

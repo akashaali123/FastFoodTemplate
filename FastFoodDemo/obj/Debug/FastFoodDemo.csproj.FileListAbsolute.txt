@@ -26,3 +26,20 @@ C:\Users\akasha.nasir\Desktop\FastFoodDemo\FastFoodDemo\obj\Debug\FastFoodDemo.c
 C:\Users\akasha.nasir\Desktop\FastFoodDemo\FastFoodDemo\obj\Debug\FastFoodDemo.exe
 C:\Users\akasha.nasir\Desktop\FastFoodDemo\FastFoodDemo\obj\Debug\FastFoodDemo.pdb
 C:\Users\akasha.nasir\Desktop\FastFoodDemo\FastFoodDemo\obj\Debug\FastFoodDemo.csprojAssemblyReference.cache
+D:\Akasha Data\DesktopData\FastFoodDemo\FastFoodDemo\bin\Debug\FastFoodDemo.exe.config
+D:\Akasha Data\DesktopData\FastFoodDemo\FastFoodDemo\bin\Debug\FastFoodDemo.exe
+D:\Akasha Data\DesktopData\FastFoodDemo\FastFoodDemo\bin\Debug\FastFoodDemo.pdb
+D:\Akasha Data\DesktopData\FastFoodDemo\FastFoodDemo\bin\Debug\Bunifu_UI_v1.52.dll
+D:\Akasha Data\DesktopData\FastFoodDemo\FastFoodDemo\bin\Debug\EntityFramework.dll
+D:\Akasha Data\DesktopData\FastFoodDemo\FastFoodDemo\bin\Debug\EntityFramework.SqlServer.dll
+D:\Akasha Data\DesktopData\FastFoodDemo\FastFoodDemo\bin\Debug\EntityFramework.xml
+D:\Akasha Data\DesktopData\FastFoodDemo\FastFoodDemo\bin\Debug\EntityFramework.SqlServer.xml
+D:\Akasha Data\DesktopData\FastFoodDemo\FastFoodDemo\obj\Debug\FastFoodDemo.DashboardCustomControl.resources
+D:\Akasha Data\DesktopData\FastFoodDemo\FastFoodDemo\obj\Debug\FastFoodDemo.Form1.resources
+D:\Akasha Data\DesktopData\FastFoodDemo\FastFoodDemo\obj\Debug\FastFoodDemo.AddProductCustmControl.resources
+D:\Akasha Data\DesktopData\FastFoodDemo\FastFoodDemo\obj\Debug\FastFoodDemo.Properties.Resources.resources
+D:\Akasha Data\DesktopData\FastFoodDemo\FastFoodDemo\obj\Debug\FastFoodDemo.SellCustomControl.resources
+D:\Akasha Data\DesktopData\FastFoodDemo\FastFoodDemo\obj\Debug\FastFoodDemo.csproj.GenerateResource.cache
+D:\Akasha Data\DesktopData\FastFoodDemo\FastFoodDemo\obj\Debug\FastFoodDemo.csproj.CopyComplete
+D:\Akasha Data\DesktopData\FastFoodDemo\FastFoodDemo\obj\Debug\FastFoodDemo.exe
+D:\Akasha Data\DesktopData\FastFoodDemo\FastFoodDemo\obj\Debug\FastFoodDemo.pdb
